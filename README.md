@@ -1,36 +1,39 @@
 # RTL_SYENTHESIS
-# RTL Synthesis of 4-bit ALU
+
+# Synthesis & Gate-Level Simulation
 
 ## Overview
-This project implements a 4-bit Arithmetic Logic Unit (ALU) in Verilog HDL. The design is synthesized using Yosys, and the generated gate-level netlist is verified through simulation.
+This project synthesizes the RTL design of an 8-bit ALU into a gate-level netlist using Yosys and verifies the synthesized design through gate-level simulation.
+
+## Objective
+- Synthesize RTL using Yosys.
+- Generate gate-level netlist.
+- Perform gate-level simulation.
+- Compare RTL and synthesized behavior.
+
+## Project Files
+- alu.v – RTL design
+- alu_tb.v – Testbench
+- synth.ys – Yosys synthesis script
+- alu_netlist.v – Generated gate-level netlist
+- README.md – Project documentation
 
 ## Tools Used
 - Verilog HDL
 - Yosys
 - Icarus Verilog
-- VS Code
-- MSYS2
+- GTKWave
+- MSYS2 UCRT64
 
-## Project Files
-- `alu.v` - RTL design of the ALU
-- `tb.v` - Testbench for simulation
-- `synth.ys` - Yosys synthesis script
-- `alu_netlist.v` - Generated gate-level netlist
-
-## Operations Supported
-- Addition
-- Subtraction
-- AND
-- OR
-- XOR
-- NOT
-- Left Shift
-- Right Shift
-
-## Simulation
-Compiled using Icarus Verilog and verified using GTKWave.
+## Synthesis Flow
+1. Read the Verilog RTL.
+2. Synthesize using Yosys.
+3. Generate gate-level netlist.
+4. Simulate the synthesized netlist.
+5. Compare RTL and gate-level outputs.
 
 ## Result
-The RTL design was successfully synthesized using Yosys. RTL and gate-level simulation outputs matched, confirming correct functionality.
+The synthesized gate-level design produced outputs equivalent to the RTL simulation, confirming correct synthesis.
 
-
+## Author
+Your Name
