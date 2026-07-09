@@ -30,9 +30,7 @@ This project implements a 4-bit Arithmetic Logic Unit (ALU) in Verilog HDL. The 
 ## Simulation
 Compiled using Icarus Verilog and verified using GTKWave.
 
-
 ## Result
 The RTL design was successfully synthesized using Yosys. RTL and gate-level simulation outputs matched, confirming correct functionality.
 
-## Result
-The RTL design was successfully synthesized using Yosys. RTL and gate-level simulation outputs matched, confirming correct functionality.
+
