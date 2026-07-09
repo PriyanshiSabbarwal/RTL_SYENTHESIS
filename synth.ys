@@ -1,0 +1,13 @@
+read_verilog alu.v
+hierarchy -top alu
+proc
+opt
+fsm
+opt
+memory
+opt
+techmap
+opt
+abc
+clean
+write_verilog alu_netlist.v
